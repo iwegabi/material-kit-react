@@ -71,7 +71,7 @@ const Page = () => {
     <>
       <Head>
         <title>
-          Login | Devias Kit
+          Login | SWED
         </title>
       </Head>
       <Box
@@ -103,7 +103,7 @@ const Page = () => {
                 color="text.secondary"
                 variant="body2"
               >
-                Don&apos;t have an account?
+               Don&apos;t have an account?
                 &nbsp;
                 <Link
                   component={NextLink}
@@ -112,7 +112,7 @@ const Page = () => {
                   variant="subtitle2"
                 >
                   Register
-                </Link>
+                </Link> 
               </Typography>
             </Stack>
             <Tabs
@@ -159,7 +159,7 @@ const Page = () => {
                   />
                 </Stack>
                 <FormHelperText sx={{ mt: 1 }}>
-                  Optionally you can skip.
+                 
                 </FormHelperText>
                 {formik.errors.submit && (
                   <Typography
@@ -185,17 +185,9 @@ const Page = () => {
                   sx={{ mt: 3 }}
                   onClick={handleSkip}
                 >
-                  Skip authentication
+                  
                 </Button>
-                <Alert
-                  color="primary"
-                  severity="info"
-                  sx={{ mt: 3 }}
-                >
-                  <div>
-                    You can use <b>demo@devias.io</b> and password <b>Password123!</b>
-                  </div>
-                </Alert>
+               
               </form>
             )}
             {method === 'phoneNumber' && (
